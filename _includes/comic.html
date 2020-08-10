@@ -5,7 +5,7 @@
   <!-- Content -->
 
   {% if include.post.comic_url %}
-    <div class="comic"><img src="{{ include.post.comic_url }}"></div>
+    <div class="comic" id="comic"><img src="{{ include.post.comic_url }}"></div>
   {% endif %}
 
   {% if include.post.content %}
@@ -27,7 +27,7 @@
   <!-- Pagination links -->
   <div class="pagination">
     {% if include.post.previous %}
-      <a href="{{ include.post.previous.url }}" class="previous">
+      <a href="{{ include.post.previous.url }}" class="previous" id="previous_comic">
         Previous Comic #{{ include.post.previous.issue_number }}
       </a>
     {% endif %}
@@ -35,7 +35,7 @@
     <a href="{{ site.posts.first.url }}" class="middle">
       Home
     </a>
-    <a href="{{ include.post.next.url }}" class="next">
+    <a href="{{ include.post.next.url }}" class="next" id="next_comic">
         Newer Comic #{{ include.post.next.issue_number }}
       </a>
     {% endif %}
