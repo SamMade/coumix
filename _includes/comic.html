@@ -28,7 +28,7 @@
   <div class="pagination">
     {% if include.post.previous %}
       <a href="{{ include.post.previous.url }}" class="previous">
-        Previous Comic
+        Previous Comic #{{ include.post.previous.issue_number }}
       </a>
     {% endif %}
     {% if include.post.next %}
@@ -36,7 +36,7 @@
       Home
     </a>
     <a href="{{ include.post.next.url }}" class="next">
-        Newer Comic
+        Newer Comic #{{ include.post.next.issue_number }}
       </a>
     {% endif %}
   </div>
