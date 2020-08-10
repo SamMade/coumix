@@ -1,0 +1,40 @@
+<article>
+  <!-- Title -->
+  <h1 class="sr-only">{{ include.post.title }}</h1>
+
+  <!-- Content -->
+
+  {% if include.post.comic_url %}
+    <div class="comic"><img src="{{ include.post.comic_url }}"></div>
+  {% endif %}
+
+  {% if include.post.content %}
+    <div>
+      {{ include.post.content }}
+    </div>
+  {% endif %}
+
+  <!-- Date -->
+  <span class="date">{{ include.post.date | date: "%A, %B %-d, %Y"}}</span>
+
+  <!-- Tags -->
+  <!-- <div class="tags">
+    {% if include.post.tags != empty %}
+      Tags: {{ include.post.tags | array_to_sentence_string }}
+    {% endif %}
+  </div> -->
+
+  <!-- Pagination links -->
+  <div class="pagination">
+    {% if include.post.next %}
+    <a href="{{ include.post.next.url }}" class="next">
+        Newer Comic
+      </a>
+    {% endif %}
+    {% if include.post.previous %}
+      <a href="{{ include.post.previous.url }}" class="previous">
+        Previous Comic
+      </a>
+    {% endif %}
+  </div>
+</article>
