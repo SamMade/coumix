@@ -1,5 +1,5 @@
 ---
 issue_number: 30
 title: When the Evil Shredder Attacks
-comic_url: https://lh3.googleusercontent.com/2Fz6Fn5zq_hh75oNLsyNqyGSHzPopHojN77Eu6GImw_3bb4JteONR_K8lnCY2nRbZQV9RD7ACVYvTHEEoW6oGt2GNkAVXzsGdHl1XI9JWwr9ojo3N7t5mYgqaux8lESdvi4mJTti4Ok=w1200
+comic_url: https://lh3.googleusercontent.com/n2TodTZ4d1hE4jtGJK_FRrsbbs30t9zI8leFvAS1PirZePdiQQDEa6pSAgOfpA3RWqLYclSOhbnjFN7pHX5at2dX-BGnia4fIu5L2WXw75Nrh38QMOzkhJ1vOomoSYmz-aRjqas5Bg=w1200
 ---
