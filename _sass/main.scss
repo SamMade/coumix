@@ -15,7 +15,19 @@ html {
   text-align: center;
 }
 
-.pagination .next {
-  display: inline-block;
-  margin-right: 2em;
+.pagination {
+  display: flex;
+  justify-content: space-between;
+
+  & > a {
+    flex: 1;
+  }
+
+  .middle {
+    text-align: center;
+  }
+
+  .next {
+    text-align: right;
+  }
 }

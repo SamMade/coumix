@@ -26,14 +26,17 @@
 
   <!-- Pagination links -->
   <div class="pagination">
-    {% if include.post.next %}
-    <a href="{{ include.post.next.url }}" class="next">
-        Newer Comic
-      </a>
-    {% endif %}
     {% if include.post.previous %}
       <a href="{{ include.post.previous.url }}" class="previous">
         Previous Comic
+      </a>
+    {% endif %}
+    {% if include.post.next %}
+    <a href="{{ site.posts.first.url }}" class="middle">
+      Home
+    </a>
+    <a href="{{ include.post.next.url }}" class="next">
+        Newer Comic
       </a>
     {% endif %}
   </div>
