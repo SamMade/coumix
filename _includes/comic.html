@@ -15,7 +15,10 @@
   {% endif %}
 
   <!-- Date -->
-  <span class="date">{{ include.post.date | date: "%A, %B %-d, %Y"}}</span>
+  {% if include.post.categories contains "publicasian" %}
+  {% else %}
+    <span class="date">{{ include.post.date | date: "%A, %B %-d, %Y"}}</span>
+  {% endif %}
 
   <!-- Tags -->
   <!-- <div class="tags">
