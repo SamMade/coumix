@@ -5,7 +5,9 @@
   <!-- Content -->
 
   {% if include.post.comic_url %}
-    <div class="comic" id="comic"><img src="{{ include.post.comic_url }}"></div>
+    <div class="comic" id="comic">
+      <img src="{{ include.post.comic_url }}">
+    </div>
   {% endif %}
 
   {% if include.post.content %}
